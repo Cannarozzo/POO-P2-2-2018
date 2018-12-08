@@ -6,12 +6,11 @@ public class Menu implements View{
     public void principal(){
         Scanner s = new Scanner(System.in);
         System.out.println("Enter a: ");
-        a =  s.nextInt();
+        a =  1; // s.nextInt();
         System.out.println("Enter b: ");
-        b = s.nextInt();
+        b = -2 ;//s.nextInt();
         System.out.println("Enter c: ");
-        c = s.nextInt();
-        s.close();      
+        c = -3 ;// s.nextInt();  
         
         
     }
@@ -24,4 +23,17 @@ public class Menu implements View{
         System.out.println("O resultado da raiz1 eh: " + r1);
         System.out.println("O resultado da raiz2 eh: "+ r2);
     }
+    
+    
+    public double getA(){
+        return this.a;
+    }
+     public double getB(){
+        return this.b;
+    }
+    
+     public double getC(){
+        return this.c;
+    }
+    
 }

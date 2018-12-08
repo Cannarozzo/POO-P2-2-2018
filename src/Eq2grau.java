@@ -7,7 +7,7 @@ public class Eq2grau {
         double d = b*b - 4 * a * c;
         if(d>=0){
             raiz1 = (-b + Math.sqrt(d)) / (2*a);
-            raiz2 = (-b + Math.sqrt(d) / (2*a));
+            raiz2 = (-b - Math.sqrt(d) / (2*a));
         }else{
             raiz1 = Double.NaN;
             raiz2 = Double.NaN;
@@ -19,4 +19,5 @@ public class Eq2grau {
     public double getRaiz2(){
         return raiz2;
     }
+   
 }
